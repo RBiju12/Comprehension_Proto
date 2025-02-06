@@ -1,4 +1,5 @@
 import Diagram from "./components/Diagram"
+import DiagramOptions from "./components/DiagramOption"
 
 export default function App() {
 
@@ -6,6 +7,7 @@ export default function App() {
     <>
       <div className="h-screen bg-black">
         <Diagram />
+        <DiagramOptions />
       </div>
     </>
   )
