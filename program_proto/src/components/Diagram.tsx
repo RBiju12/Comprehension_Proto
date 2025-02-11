@@ -1,5 +1,6 @@
 import {type CellStyle, Graph, InternalEvent} from '@maxgraph/core';
 import {useRef, useEffect} from 'react';
+import Relations from './Relations';
 
 export default function Diagram()
 {
@@ -110,11 +111,11 @@ export default function Diagram()
 
 
     return (
-        <>
+        <div className='relative border border-white inline-block'>
         <div className='relative size 16'>
-            <h1 className='text-white'>Subsystem / Component 6</h1>
+            <h1 className='relative top-0 ml-100 text-white'>Subsystem / Component 6</h1>
         </div>
-        <div ref={containerElement as any} className='justify-center items-center'/>
-        </>
+        <div ref={containerElement as any} className='justify-center items-center inline-block border-30 bg-black'/>
+        </div>
     )
 }
